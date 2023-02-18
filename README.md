@@ -60,21 +60,21 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 3. Check back at Client-1 to see the ping succeed
 
-![pSucced-image](assets/succeed.png)
+![pSucced-image](assets/ping2.png)
 
 ### Install Active Directory
 
 1. Login to DC-1 and install Active Directory Domain Services
 
-![pSucced-image](assets/succeed.png)
+![pSucced-image](assets/ad.png)
 
 2. Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
 
-![pSucced-image](assets/succeed.png)
+![pSucced-image](assets/dc.png)
 
 3. Restart and then log back into DC-1 as user: mydomain.com\labuser
 
-![pSucced-image](assets/succeed.png)
+![pSucced-image](assets/labuser.png)
 
 ### Create an Admin and Normal User Account in AD
 
