@@ -80,27 +80,27 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 1. In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
 
-![pSucced-image](assets/succeed.png)
+![pSucced-image](assets/emp.png)
 
 2. Create a new OU named “_ADMINS”
 
-![pSucced-image](assets/succeed.png)
+![pSucced-image](assets/ou_s.png)
 
 3. Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”
 
-![pSucced-image](assets/succeed.png)
+![pSucced-image](assets/jane.png)
 
 4. Add jane_admin to the “Domain Admins” Security Group
 
-![pSucced-image](assets/succeed.png)
+![pSucced-image](assets/security-g.png)
 
 5. Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
 
-![pSucced-image](assets/succeed.png)
+![pSucced-image](assets/j-admin.png)
 
 6. User jane_admin as your admin account from now on
 
-![pSucced-image](assets/succeed.png)
+![pSucced-image](assets/.png)
 
 
 ### Join Client-1 to your domain (mydomain.com)
