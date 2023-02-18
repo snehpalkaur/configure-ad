@@ -115,19 +115,35 @@ Create a new OU named “_CLIENTS” and drag Client-1 into there
 ### Setup Remote Desktop for non-administrative users on Client-1
 
 Log into Client-1 as mydomain.com\jane_admin and open system properties
+
 Click “Remote Desktop”
+
 Allow “domain users” access to remote desktop
+
 You can now log into Client-1 as a normal, non-administrative user now
 Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
 
 ### Create a bunch of additional users and attempt to log into client-1 with one of the users
 
-Login to DC-1 as jane_admin
-Open PowerShell_ise as an administrator
-Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
-Run the script and observe the accounts being created
-When finished, open ADUC and observe the accounts in the appropriate OU
-attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+1. Login to DC-1 as jane_admin
+
+![pSucced-image](assets/succeed.png)
+
+2. Open PowerShell_ise as an administrator 
+
+![pSucced-image](assets/succeed.png)
+
+3. Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+
+![pSucced-image](assets/succeed.png)
+
+4. Run the script and observe the accounts being created
+
+![pSucced-image](assets/succeed.png)
+
+5. When finished, open ADUC and observe the accounts in the appropriate OU and attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+
+![pSucced-image](assets/succeed.png)
 
 
 
