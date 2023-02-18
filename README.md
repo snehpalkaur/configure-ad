@@ -46,7 +46,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 4. Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
 
-![Netwrok Topology](assets/Network.png)
+![Netwrok Topology](assets/image.png)
 
 ### Ensure Connectivity between the client and Domain Controller
 
