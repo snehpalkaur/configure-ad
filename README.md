@@ -100,12 +100,19 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ### Join Client-1 to your domain (mydomain.com)
 
-From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
-From the Azure Portal, restart Client-1
+1. From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
+
+![dns-s](assets/dns-s.png)
+
+2. From the Azure Portal, restart Client-1
 Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
-Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
+
+![dns-s](assets/c-domain.png)
+
+3. Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
 Create a new OU named “_CLIENTS” and drag Client-1 into there
 
+![dns-s](assets/c-ad.png)
 
 ### Setup Remote Desktop for non-administrative users on Client-1
 
@@ -118,17 +125,15 @@ Allow “domain users” access to remote desktop
 You can now log into Client-1 as a normal, non-administrative user now
 Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
 
+![dns-s](assets/gp-c.png)
+
 ### Create a bunch of additional users and attempt to log into client-1 with one of the users
 
 1. Login to DC-1 as jane_admin
 
-![pSucced-image](assets/succeed.png)
+Open PowerShell_ise as an administrator 
 
-2. Open PowerShell_ise as an administrator 
-
-![pSucced-image](assets/succeed.png)
-
-3. Create a new File and paste the contents of the script into it
+Create a new File and paste the contents of the script into it
 
 ```  # ----- Edit these Variables for your own Use Case ----- #
 $PASSWORD_FOR_USERS   = "Password1"
@@ -177,18 +182,21 @@ while ($count -lt $NUMBER_OF_ACCOUNTS_TO_CREATE) {
     $count++
 }
 ```
- (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
 
-![pSucced-image](assets/succeed.png)
 
-4. Run the script and observe the accounts being created
+![pSucced-image](assets/ps.png)
 
-![pSucced-image](assets/succeed.png)
+2. Run the script and observe the accounts being created
 
-5. When finished, open ADUC and observe the accounts in the appropriate OU and attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+![pSucced-image](assets/ps-user.png)
 
-![pSucced-image](assets/succeed.png)
+3. When finished, open ADUC and observe the accounts in the appropriate OU and attempt to log into Client-1 with one of the accounts (take note of the password in the script)
 
+![pSucced-image](assets/accounts.png)
+
+![dns-s](assets/bele.png)
+
+![dns-s](assets/b-user.png)
 
 
 
