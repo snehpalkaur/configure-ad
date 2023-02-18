@@ -42,7 +42,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 3. Set Domain Controller’s NIC Private IP address to be static
 
-![NIC Image]()
+![NIC Image](assets/NIC.png)
 
 4. Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
 
