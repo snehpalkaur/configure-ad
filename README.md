@@ -34,7 +34,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 1. Create the Domain Controller VM (Windows Server 2022) named “DC-1”
 
-![DC-1 image](assets/)
+![DC-1 image](assets/DC-1.png)
 
 3. Take note of the Resource Group and Virtual Network (Vnet) that get created at this time
 4. Set Domain Controller’s NIC Private IP address to be static
