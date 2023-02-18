@@ -198,6 +198,7 @@ while ($count -lt $NUMBER_OF_ACCOUNTS_TO_CREATE) {
 
 ![dns-s](assets/b-user.png)
 
+Finally, at the end do not forget to **clean up** your resources in th Azure Portal.
 
 
 
