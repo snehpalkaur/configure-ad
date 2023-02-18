@@ -94,14 +94,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ![pSucced-image](assets/security-g.png)
 
-5. Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
+5. Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”. User jane_admin as your admin account from now on
 
 ![pSucced-image](assets/j-admin.png)
-
-6. User jane_admin as your admin account from now on
-
-![pSucced-image](assets/.png)
-
 
 ### Join Client-1 to your domain (mydomain.com)
 
